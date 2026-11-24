@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Cara Pemesanan - Dimsum Mas Badrun</title>
+</head>
+<body>
+<header>
+    <h1>CARA PEMESANAN</h1>
+    <h2>Dimsum Mas Badrun</h2>
+    <nav>
+    <p>
+        <a href="beranda.html">Beranda</a> |
+        <a href="profil.html">Profil Usaha</a> |
+        <a href="produk.html">Produk</a> |
+        <a href="pemesanan.html">Cara Pemesanan</a> |
+        <a href="biodata.html">Biodata Kelompok</a>
+    </p>
+</nav>
+</header>
+
+<main>
+<article>
+    <h2>Langkah Memesan</h2>
+    <p>Memesan Dimsum Mas Badrun sangat mudah dan dapat dilakukan dari mana saja. Pembeli cukup memilih produk yang diinginkan pada halaman <a href="produk.html">Produk</a>, mengisi formulir pemesanan yang tersedia di halaman ini, lalu menunggu konfirmasi dari kami. Setelah pesanan dikonfirmasi, pembeli akan menerima informasi total pembayaran, nomor rekening, serta perkiraan waktu pesanan siap. Pesanan akan dikukus dan dikemas dengan rapi, kemudian dapat diambil langsung di tempat atau diantar ke alamat tujuan di sekitar Talun, Blitar.</p>
+    <ol>
+        <li>Pilih varian rasa dan isi pada halaman Produk.</li>
+        <li>Isi formulir pemesanan di bawah ini dengan lengkap.</li>
+        <li>Tekan tombol Kirim Pesanan.</li>
+        <li>Tunggu konfirmasi dari admin.</li>
+        <li>Lakukan pembayaran sesuai total yang diinformasikan.</li>
+        <li>Pesanan diambil atau diantar ke alamat Anda.</li>
+    </ol>
+
+    <h2>Formulir Pemesanan</h2>
+    <form id="formPesan">
+        <input type="hidden" name="usaha" value="Dimsum Mas Badrun">
+        <table>
+            <tr>
+                <td>Nama</td>
+                <td>:</td>
+                <td><input type="text" name="nama" size="30"></td>
+            </tr>
+            <tr>
+                <td>No. HP</td>
+                <td>:</td>
+                <td><input type="text" name="hp" maxlength="13"></td>
+            </tr>
+            <tr>
+                <td>Varian Rasa</td>
+                <td>:</td>
+                <td>
+                    <select name="varian">
+                        <option>Ori</option>
+                        <option>Keju</option>
+                        <option>Mentai</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Isi</td>
+                <td>:</td>
+                <td>
+                    <input type="radio" name="isi" value="4"> 4 pcs
+                    <input type="radio" name="isi" value="6"> 6 pcs
+                </td>
+            </tr>
+            <tr>
+                <td>Jumlah Porsi</td>
+                <td>:</td>
+                <td><input type="text" name="jumlah" size="5" value="1"></td>
+            </tr>
+            <tr>
+                <td>Tambahan</td>
+                <td>:</td>
+                <td>
+                    <input type="checkbox" name="tambahan1" value="sambal"> Sambal
+                    <input type="checkbox" name="tambahan2" value="saus"> Saus tambahan
+                </td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td>:</td>
+                <td><textarea name="alamat" cols="30" rows="4"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>
+                    <input type="submit" value="Kirim Pesanan">
+                    <input type="reset" value="Batal">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <p>Perkiraan total: <span id="total">-</span></p>
+    <div id="ringkasan" role="status"></div>
+
+    <h2>Pembayaran dan Pengantaran</h2>
+    <p>Pembayaran dapat dilakukan melalui transfer bank atau dompet digital, sedangkan untuk pembeli di sekitar Talun tersedia pilihan pembayaran di tempat saat pesanan diterima. Pengantaran dilakukan ke wilayah sekitar Talun dan Blitar, dan pembeli juga dapat mengambil pesanan langsung ke tempat kami. Kami menyarankan pembeli memesan paling lambat satu hari sebelum dimsum dibutuhkan, terutama untuk jumlah besar atau acara tertentu, karena setiap pesanan dibuat dan dikukus sesuai jadwal agar tetap segar ketika sampai di tangan pembeli. Informasi tambahan mengenai ongkos antar akan disampaikan oleh admin ketika pesanan dikonfirmasi.</p>
+
+    <h2>Catatan untuk Pembeli</h2>
+    <p>Agar pesanan dapat diproses dengan cepat dan tepat, mohon isi seluruh kolom formulir dengan data yang benar. Nama dan nomor telepon digunakan oleh admin untuk menghubungi pembeli, sedangkan alamat digunakan sebagai tujuan pengantaran. Jika terdapat permintaan khusus, misalnya tambahan sambal atau pengurangan rasa pedas, pembeli dapat menyampaikannya langsung kepada admin setelah formulir dikirim. Setiap data yang Anda kirim hanya kami gunakan untuk keperluan pemrosesan pesanan. Formulir di atas dibuat menggunakan HTML sebagai latihan, sehingga tombol kirim belum terhubung ke sistem penyimpanan data. Kepuasan pelanggan adalah hal yang paling kami utamakan dalam menjalankan usaha ini.</p>
+
+    <h2>Pertanyaan yang Sering Diajukan</h2>
+    <details>
+        <summary>Berapa lama dimsum dapat bertahan?</summary>
+        <p>Dimsum paling enak disantap pada hari yang sama selagi hangat.</p>
+    </details>
+    <details>
+        <summary>Apakah bisa memesan dalam jumlah besar?</summary>
+        <p>Bisa. Silakan cantumkan jumlah pesanan pada formulir dan kami akan menghubungi Anda.</p>
+    </details>
+    <details>
+        <summary>Apakah bisa diantar?</summary>
+        <p>Bisa, untuk wilayah sekitar Talun dan Blitar.</p>
+    </details>
+</article>
+</main>
+
+<footer>
+    <hr>
+    <p>&copy; 2026 Kelompok 1 - Tema UMKM - Mata Kuliah Web Programming - Teknik Informatika</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
